@@ -1,9 +1,17 @@
+using blog_main.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<BlogDbContext>(options => options.UseNpgsql(connectionString));
+
+builder.Services.AddScoped<IPostRepo, PostRepo>();
 
 var app = builder.Build();
 

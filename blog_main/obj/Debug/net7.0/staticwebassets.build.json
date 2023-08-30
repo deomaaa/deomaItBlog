@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TzGn/pLfBkW/aJBapEmxs5YicvPLFLnOaLFCJ4F50Pw=",
+  "Hash": "+Y0nrLcgFwpt6TzIDiKSPltIH5yf2doMSNq9dgZIN5k=",
   "Source": "blog_main",
   "BasePath": "_content/blog_main",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "blog_main\\wwwroot",
       "Source": "blog_main",
-      "ContentRoot": "d:\\PROG\\Projects\\blog\\blog_main\\wwwroot\\",
+      "ContentRoot": "D:\\PROG\\Projects\\blog\\blog_main\\wwwroot\\",
       "BasePath": "_content/blog_main",
       "Pattern": "**"
     }
@@ -54,7 +54,7 @@
       "Identity": "D:\\PROG\\Projects\\blog\\blog_main\\wwwroot\\css\\style.css",
       "SourceId": "blog_main",
       "SourceType": "Discovered",
-      "ContentRoot": "d:\\PROG\\Projects\\blog\\blog_main\\wwwroot\\",
+      "ContentRoot": "D:\\PROG\\Projects\\blog\\blog_main\\wwwroot\\",
       "BasePath": "_content/blog_main",
       "RelativePath": "css/style.css",
       "AssetKind": "All",
@@ -71,7 +71,7 @@
       "Identity": "D:\\PROG\\Projects\\blog\\blog_main\\wwwroot\\images\\profile.jpg",
       "SourceId": "blog_main",
       "SourceType": "Discovered",
-      "ContentRoot": "d:\\PROG\\Projects\\blog\\blog_main\\wwwroot\\",
+      "ContentRoot": "D:\\PROG\\Projects\\blog\\blog_main\\wwwroot\\",
       "BasePath": "_content/blog_main",
       "RelativePath": "images/profile.jpg",
       "AssetKind": "All",

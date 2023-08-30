@@ -1,12 +1,14 @@
+using blog_main.Data;
 using Microsoft.AspNetCore.Mvc;
 
 namespace blog_main.Controllers
 {
     public class BlogController : Controller
     {
-        public BlogController()
+        private readonly IPostRepo _repository;
+        public BlogController(IPostRepo repository)
         {
-
+            _repository = repository;
         }
 
         [HttpGet]

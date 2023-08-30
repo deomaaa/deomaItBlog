@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gmCoDdrab0vTYQDVJjaZN0W6buVE4JtRxCukgYUm4uyD17qchXbUjc/gsBGd2IO6V9NnatAYx+xH+EwhDhyo5g==",
+  "dgSpecHash": "LXedGI8aPB/7pyzksG+7MqhwIgx5PjXxkWtfFqON7WwoTu1Z/9kj7Vlu3KLRbLNZzhvv6/88NnokWrDPYHDtXA==",
   "success": true,
-  "projectFilePath": "d:\\PROG\\Projects\\blog\\blog_main\\blog_main.csproj",
+  "projectFilePath": "D:\\PROG\\Projects\\blog\\blog_main\\blog_main.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\demid\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\demid\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
@@ -44,6 +44,8 @@
     "C:\\Users\\demid\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\demid\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\demid\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\demid\\.nuget\\packages\\npgsql\\7.0.4\\npgsql.7.0.4.nupkg.sha512",
+    "C:\\Users\\demid\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\7.0.4\\npgsql.entityframeworkcore.postgresql.7.0.4.nupkg.sha512",
     "C:\\Users\\demid\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\demid\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\demid\\.nuget\\packages\\system.configuration.configurationmanager\\5.0.0\\system.configuration.configurationmanager.5.0.0.nupkg.sha512",

@@ -75,3 +75,5 @@ D:\PROG\Projects\blog\blog_main\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\
 D:\PROG\Projects\blog\blog_main\obj\Debug\net7.0\blog_main.csproj.CopyComplete
 D:\PROG\Projects\blog\blog_main\bin\Debug\net7.0\AutoMapper.dll
 D:\PROG\Projects\blog\blog_main\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\PROG\Projects\blog\blog_main\bin\Debug\net7.0\Npgsql.dll
+D:\PROG\Projects\blog\blog_main\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
