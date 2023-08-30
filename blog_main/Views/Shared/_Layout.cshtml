@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    <title>@ViewData["Title"] - deomaItBlog</title>
+</head>
+<body>
+    
+    <header>
+        <div class="blog__header">
+            <div class="container">
+                <div class="blog__header__inner">
+                    <ul class="blog__header__inner__menu">
+                        <li>
+                            <h1><a asp-controller="Blog" asp-action="Index">/About/</a></h1>                           
+                        </li>
+                        <li>
+                            <h1><a asp-controller="Blog" asp-action="Posts">/Posts/</a></h1>
+                        </li>
+                        <li>
+                            <h1><a asp-controller="Blog" asp-action="Index">/Projects/</a></h1>
+                        </li>
+                        <li>
+                            <h1><a asp-controller="Blog" asp-action="Index">/Work_Experience/</a></h1>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="blog__info">
+        <div class="container">
+            <div class="blog__info__inner">
+                <div class="blog__info__inner__photo">
+                    <img src="~/images/profile.jpg" alt="">
+                </div>
+                <div class="blog__info__inner__data">
+                    <div class="blog__info__inner__name">
+                        <h1>Demid Andreev</h1>
+                    </div>
+                    <div class="blog__info__inner__prof">
+                        <h2>.NET developer</h2>                        
+                    </div>
+                </div>          
+            </div>
+        </div>
+    </div>
+    
+    <div class="blog__content">
+        <div class="container">
+            @RenderBody()
+        </div>
+    </div>
+
+    <footer>
+        <div class="blog__footer">
+            <div class="container">
+                <div class="blog__footer__inner">
+                    <h1>deomaItBlog, 2023</h1>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

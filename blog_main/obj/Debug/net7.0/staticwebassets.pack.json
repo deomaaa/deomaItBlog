@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\PROG\\Projects\\blog\\blog_main\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\blog_main.bundle.scp.css",
+      "PackagePath": "staticwebassets\\blog_main.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\PROG\\Projects\\blog\\blog_main\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\PROG\\Projects\\blog\\blog_main\\wwwroot\\images\\profile.jpg",
+      "PackagePath": "staticwebassets\\images\\profile.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.blog_main.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.blog_main.props",
+      "PackagePath": "build\\blog_main.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.blog_main.props",
+      "PackagePath": "buildMultiTargeting\\blog_main.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.blog_main.props",
+      "PackagePath": "buildTransitive\\blog_main.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

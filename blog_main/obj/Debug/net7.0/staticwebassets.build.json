@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "Hash": "TzGn/pLfBkW/aJBapEmxs5YicvPLFLnOaLFCJ4F50Pw=",
+  "Source": "blog_main",
+  "BasePath": "_content/blog_main",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "blog_main\\wwwroot",
+      "Source": "blog_main",
+      "ContentRoot": "d:\\PROG\\Projects\\blog\\blog_main\\wwwroot\\",
+      "BasePath": "_content/blog_main",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\PROG\\Projects\\blog\\blog_main\\obj\\Debug\\net7.0\\scopedcss\\bundle\\blog_main.styles.css",
+      "SourceId": "blog_main",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\PROG\\Projects\\blog\\blog_main\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/blog_main",
+      "RelativePath": "blog_main.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\PROG\\Projects\\blog\\blog_main\\obj\\Debug\\net7.0\\scopedcss\\bundle\\blog_main.styles.css"
+    },
+    {
+      "Identity": "D:\\PROG\\Projects\\blog\\blog_main\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\blog_main.bundle.scp.css",
+      "SourceId": "blog_main",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\PROG\\Projects\\blog\\blog_main\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/blog_main",
+      "RelativePath": "blog_main.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\PROG\\Projects\\blog\\blog_main\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\blog_main.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\PROG\\Projects\\blog\\blog_main\\wwwroot\\css\\style.css",
+      "SourceId": "blog_main",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\PROG\\Projects\\blog\\blog_main\\wwwroot\\",
+      "BasePath": "_content/blog_main",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    },
+    {
+      "Identity": "D:\\PROG\\Projects\\blog\\blog_main\\wwwroot\\images\\profile.jpg",
+      "SourceId": "blog_main",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\PROG\\Projects\\blog\\blog_main\\wwwroot\\",
+      "BasePath": "_content/blog_main",
+      "RelativePath": "images/profile.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\profile.jpg"
+    }
+  ]
+}
