@@ -1,11 +1,7 @@
-using System.ComponentModel.DataAnnotations;
-
-namespace blog_main.Models
+namespace blog_main.Dtos
 {
-    public class Post
+    public class PostCreateDto
     {
-        [Key]
-        public int Post_Id { get; set;}
         public string PostFileNameMinio { get;}
         public string PostName { get; set; }
         public string Author { get; set; }

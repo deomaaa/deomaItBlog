@@ -5,7 +5,7 @@ namespace blog_main.Data
 {
     public class BlogDbContext : DbContext
     {
-        public DbSet<Posts> Posts { get; set; }
+        public DbSet<Post> Posts { get; set; }
 
         public BlogDbContext(DbContextOptions<BlogDbContext> options) 
             : base(options)
