@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pKQbJdcS36xnxNp40yBXfap3G7mlXkoSYKRqUqMKuLw=",
+  "Hash": "OpsEdcsgjFn05nxpOcR4vXKkHgE7ggh5I+iYlGflHzg=",
   "Source": "blog_main",
   "BasePath": "_content/blog_main",
   "Mode": "Default",
@@ -17,10 +17,10 @@
   ],
   "Assets": [
     {
-      "Identity": "D:\\Projects\\deomaItBlog\\blog_main\\obj\\Debug\\net7.0\\scopedcss\\bundle\\blog_main.styles.css",
+      "Identity": "d:\\Projects\\deomaItBlog\\blog_main\\obj\\Debug\\net7.0\\scopedcss\\bundle\\blog_main.styles.css",
       "SourceId": "blog_main",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Projects\\deomaItBlog\\blog_main\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "ContentRoot": "d:\\Projects\\deomaItBlog\\blog_main\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
       "BasePath": "_content/blog_main",
       "RelativePath": "blog_main.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Projects\\deomaItBlog\\blog_main\\obj\\Debug\\net7.0\\scopedcss\\bundle\\blog_main.styles.css"
+      "OriginalItemSpec": "d:\\Projects\\deomaItBlog\\blog_main\\obj\\Debug\\net7.0\\scopedcss\\bundle\\blog_main.styles.css"
     },
     {
-      "Identity": "D:\\Projects\\deomaItBlog\\blog_main\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\blog_main.bundle.scp.css",
+      "Identity": "d:\\Projects\\deomaItBlog\\blog_main\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\blog_main.bundle.scp.css",
       "SourceId": "blog_main",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Projects\\deomaItBlog\\blog_main\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "d:\\Projects\\deomaItBlog\\blog_main\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/blog_main",
       "RelativePath": "blog_main.bundle.scp.css",
       "AssetKind": "All",
@@ -48,10 +48,10 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Projects\\deomaItBlog\\blog_main\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\blog_main.bundle.scp.css"
+      "OriginalItemSpec": "d:\\Projects\\deomaItBlog\\blog_main\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\blog_main.bundle.scp.css"
     },
     {
-      "Identity": "D:\\Projects\\deomaItBlog\\blog_main\\wwwroot\\css\\style.css",
+      "Identity": "d:\\Projects\\deomaItBlog\\blog_main\\wwwroot\\css\\style.css",
       "SourceId": "blog_main",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Projects\\deomaItBlog\\blog_main\\wwwroot\\",
@@ -68,7 +68,7 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
-      "Identity": "D:\\Projects\\deomaItBlog\\blog_main\\wwwroot\\images\\profile.jpg",
+      "Identity": "d:\\Projects\\deomaItBlog\\blog_main\\wwwroot\\images\\profile.jpg",
       "SourceId": "blog_main",
       "SourceType": "Discovered",
       "ContentRoot": "d:\\Projects\\deomaItBlog\\blog_main\\wwwroot\\",

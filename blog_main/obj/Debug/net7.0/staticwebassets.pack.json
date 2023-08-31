@@ -1,15 +1,15 @@
 {
   "Files": [
     {
-      "Id": "D:\\Projects\\deomaItBlog\\blog_main\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\blog_main.bundle.scp.css",
+      "Id": "d:\\Projects\\deomaItBlog\\blog_main\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\blog_main.bundle.scp.css",
       "PackagePath": "staticwebassets\\blog_main.bundle.scp.css"
     },
     {
-      "Id": "D:\\Projects\\deomaItBlog\\blog_main\\wwwroot\\css\\style.css",
+      "Id": "d:\\Projects\\deomaItBlog\\blog_main\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
-      "Id": "D:\\Projects\\deomaItBlog\\blog_main\\wwwroot\\images\\profile.jpg",
+      "Id": "d:\\Projects\\deomaItBlog\\blog_main\\wwwroot\\images\\profile.jpg",
       "PackagePath": "staticwebassets\\images\\profile.jpg"
     },
     {
