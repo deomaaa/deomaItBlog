@@ -21,9 +21,11 @@ namespace blog_main.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Posts(string bucketName)
+        public async Task<IActionResult> Posts()
         {
-            return View();
+            var posts = await _repository.GetAllPosts();
+
+            return View(posts);
         }  
     }
 }

@@ -1,3 +1,8 @@
+using blog_main.Models;
+using CommunityToolkit.HighPerformance.Helpers;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Minio;
 using Minio.AspNetCore;
 
@@ -11,6 +16,13 @@ namespace blog_main.Data
         {
             _dbContext = dbContext;
             _minioClient = minioClientFactory.CreateClient();
+        }
+
+        public async Task<List<Post>> GetAllPosts()
+        {
+            var posts = await _dbContext.Posts.ToListAsync();
+            
+            return posts;
         }
     }
 }

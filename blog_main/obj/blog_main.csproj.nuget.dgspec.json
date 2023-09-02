@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PROG\\Projects\\blog\\blog_main\\blog_main.csproj": {}
+    "d:\\PROG\\Projects\\blog\\blog_main\\blog_main.csproj": {}
   },
   "projects": {
-    "D:\\PROG\\Projects\\blog\\blog_main\\blog_main.csproj": {
+    "d:\\PROG\\Projects\\blog\\blog_main\\blog_main.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PROG\\Projects\\blog\\blog_main\\blog_main.csproj",
+        "projectUniqueName": "d:\\PROG\\Projects\\blog\\blog_main\\blog_main.csproj",
         "projectName": "blog_main",
-        "projectPath": "D:\\PROG\\Projects\\blog\\blog_main\\blog_main.csproj",
+        "projectPath": "d:\\PROG\\Projects\\blog\\blog_main\\blog_main.csproj",
         "packagesPath": "C:\\Users\\demid\\.nuget\\packages\\",
-        "outputPath": "D:\\PROG\\Projects\\blog\\blog_main\\obj\\",
+        "outputPath": "d:\\PROG\\Projects\\blog\\blog_main\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

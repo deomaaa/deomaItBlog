@@ -107,3 +107,130 @@ body{
 .blog__homepage__inner__theme a:hover{
     text-decoration: none;
 }
+
+/* Posts */
+
+/* Post header */
+@font-face {
+	font-family: 'Console'; 
+	src: url(../fonts/clacon2.ttf); 
+}
+
+.blog__post__inner__border {
+    border: 5px solid rgb(66, 253, 88);
+    border-radius: 20px;
+}
+
+.blog__post__inner {
+    background-color: black;
+
+    border: 5px solid rgba(28, 107, 36, 0.553);
+    border-radius: 15px;
+
+    font-family: 'Console';
+}
+
+.blog__post__header {
+    display: flex;
+}
+
+.blog__post__name {
+    color: black;
+    background-color: rgb(66, 253, 88);
+
+    margin: 0px;
+    padding: 5px 0 0 0;
+    border-radius: 10px 10px 10px 10px;
+    width: 100%;
+
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.blog__post__header__statistics a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Post description */
+.blog__post__body {
+    padding: 30px 30px 15px 30px;
+}
+
+.blog__post__body__name {
+    color: white;
+    font-size: 1.5em;
+
+    margin-bottom: 30px;
+}
+
+.blog__post__body__name span {
+    color: green;
+}
+
+.blog__post__description {
+    color: gray;
+    font-size: 1.5em;
+}
+
+/* Statistics */
+.blog__post__stat {
+    color: gray;
+    font-size: 1.5em;
+
+    margin: 30px 0px;
+}
+
+/* Posts input */
+.blog__post__input {
+    margin-top: 30px;
+}
+
+.blog__post__input__body {
+    display: flex;
+}
+
+.blog__post__input__text {
+    width: 90%;
+}
+
+.blog__post__input__area {
+    width: 100%;
+
+    color: green;
+    font-family: 'Console';
+    font-size: 1.5em;
+
+    padding-top: 5px;
+    outline: none;
+
+    border: none;
+    
+    background-color: #2424247e;
+}
+
+.blog__post__input label {
+    color: green;
+    font-size: 1.5em;
+}
+
+.blog__post__input__button {
+    width: 10%;
+}
+
+.blog__post__input__button input{
+    font-size: 1.5em;
+    font-family: 'Console';
+
+    width: 100%;
+
+    border-radius: 0px;
+    border: none;
+
+    padding: 2px;
+
+    color: black;
+    background-color: green;
+}
