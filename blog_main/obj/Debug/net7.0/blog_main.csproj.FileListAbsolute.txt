@@ -156,3 +156,9 @@ D:\Projects\deomaItBlog\blog_main\obj\Debug\net7.0\refint\blog_main.dll
 D:\Projects\deomaItBlog\blog_main\obj\Debug\net7.0\blog_main.pdb
 d:\Projects\deomaItBlog\blog_main\obj\Debug\net7.0\blog_main.genruntimeconfig.cache
 d:\Projects\deomaItBlog\blog_main\obj\Debug\net7.0\ref\blog_main.dll
+d:\PROG\Projects\blog\blog_main\bin\Debug\net7.0\CommunityToolkit.HighPerformance.dll
+d:\PROG\Projects\blog\blog_main\bin\Debug\net7.0\Minio.dll
+d:\PROG\Projects\blog\blog_main\bin\Debug\net7.0\Minio.AspNetCore.dll
+d:\PROG\Projects\blog\blog_main\bin\Debug\net7.0\System.IO.Hashing.dll
+d:\PROG\Projects\blog\blog_main\bin\Debug\net7.0\System.Reactive.dll
+d:\PROG\Projects\blog\blog_main\bin\Debug\net7.0\System.Reactive.Linq.dll

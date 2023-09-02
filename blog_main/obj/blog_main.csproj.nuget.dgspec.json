@@ -1,26 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Projects\\deomaItBlog\\blog_main\\blog_main.csproj": {}
+    "d:\\PROG\\Projects\\blog\\blog_main\\blog_main.csproj": {}
   },
   "projects": {
-    "d:\\Projects\\deomaItBlog\\blog_main\\blog_main.csproj": {
+    "d:\\PROG\\Projects\\blog\\blog_main\\blog_main.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Projects\\deomaItBlog\\blog_main\\blog_main.csproj",
+        "projectUniqueName": "d:\\PROG\\Projects\\blog\\blog_main\\blog_main.csproj",
         "projectName": "blog_main",
-        "projectPath": "d:\\Projects\\deomaItBlog\\blog_main\\blog_main.csproj",
-        "packagesPath": "C:\\Users\\Andreev_DV\\.nuget\\packages\\",
-        "outputPath": "d:\\Projects\\deomaItBlog\\blog_main\\obj\\",
+        "projectPath": "d:\\PROG\\Projects\\blog\\blog_main\\blog_main.csproj",
+        "packagesPath": "C:\\Users\\demid\\.nuget\\packages\\",
+        "outputPath": "d:\\PROG\\Projects\\blog\\blog_main\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Andreev_DV\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\demid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -67,6 +73,14 @@
               "target": "Package",
               "version": "[7.0.9, )"
             },
+            "Minio": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Minio.AspNetCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[7.0.4, )"
@@ -91,7 +105,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
