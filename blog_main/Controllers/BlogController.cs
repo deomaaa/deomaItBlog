@@ -8,12 +8,10 @@ namespace blog_main.Controllers
     public class BlogController : Controller
     {
         private readonly IPostRepo _repository;
-        private readonly IMinioClient _minioClient;
 
-        public BlogController(IPostRepo repository, IMinioClientFactory minioClientFactory)
+        public BlogController(IPostRepo repository)
         {
             _repository = repository;
-            _minioClient = minioClientFactory.CreateClient();
         }
 
         [HttpGet]
@@ -22,16 +20,9 @@ namespace blog_main.Controllers
             return View();
         }
 
-        [HttpGet("{controller}/{action}/{bucketName?}")]
+        [HttpGet]
         public async Task<IActionResult> Posts(string bucketName)
         {
-            var getListBucketsTask = await _minioClient.ListBucketsAsync().ConfigureAwait(false);
-
-            // Iterate over the list of buckets.
-            foreach (var bucket in getListBucketsTask.Buckets)
-            {
-                Console.WriteLine(bucket.Name + " " + bucket.CreationDateDateTime);
-            }
             return View();
         }  
     }

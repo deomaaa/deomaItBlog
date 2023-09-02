@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oLKD2AnjDXRDG26JE/mUqO9U9zEeL7dXOtsfEhH6jXc=",
+  "Hash": "+Y0nrLcgFwpt6TzIDiKSPltIH5yf2doMSNq9dgZIN5k=",
   "Source": "blog_main",
   "BasePath": "_content/blog_main",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "blog_main\\wwwroot",
       "Source": "blog_main",
-      "ContentRoot": "d:\\PROG\\Projects\\blog\\blog_main\\wwwroot\\",
+      "ContentRoot": "D:\\PROG\\Projects\\blog\\blog_main\\wwwroot\\",
       "BasePath": "_content/blog_main",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "d:\\PROG\\Projects\\blog\\blog_main\\obj\\Debug\\net7.0\\scopedcss\\bundle\\blog_main.styles.css",
+      "Identity": "D:\\PROG\\Projects\\blog\\blog_main\\obj\\Debug\\net7.0\\scopedcss\\bundle\\blog_main.styles.css",
       "SourceId": "blog_main",
       "SourceType": "Computed",
-      "ContentRoot": "d:\\PROG\\Projects\\blog\\blog_main\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\PROG\\Projects\\blog\\blog_main\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
       "BasePath": "_content/blog_main",
       "RelativePath": "blog_main.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "d:\\PROG\\Projects\\blog\\blog_main\\obj\\Debug\\net7.0\\scopedcss\\bundle\\blog_main.styles.css"
+      "OriginalItemSpec": "D:\\PROG\\Projects\\blog\\blog_main\\obj\\Debug\\net7.0\\scopedcss\\bundle\\blog_main.styles.css"
     },
     {
-      "Identity": "d:\\PROG\\Projects\\blog\\blog_main\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\blog_main.bundle.scp.css",
+      "Identity": "D:\\PROG\\Projects\\blog\\blog_main\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\blog_main.bundle.scp.css",
       "SourceId": "blog_main",
       "SourceType": "Computed",
-      "ContentRoot": "d:\\PROG\\Projects\\blog\\blog_main\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\PROG\\Projects\\blog\\blog_main\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/blog_main",
       "RelativePath": "blog_main.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "d:\\PROG\\Projects\\blog\\blog_main\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\blog_main.bundle.scp.css"
+      "OriginalItemSpec": "D:\\PROG\\Projects\\blog\\blog_main\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\blog_main.bundle.scp.css"
     },
     {
-      "Identity": "d:\\PROG\\Projects\\blog\\blog_main\\wwwroot\\css\\style.css",
+      "Identity": "D:\\PROG\\Projects\\blog\\blog_main\\wwwroot\\css\\style.css",
       "SourceId": "blog_main",
       "SourceType": "Discovered",
-      "ContentRoot": "d:\\PROG\\Projects\\blog\\blog_main\\wwwroot\\",
+      "ContentRoot": "D:\\PROG\\Projects\\blog\\blog_main\\wwwroot\\",
       "BasePath": "_content/blog_main",
       "RelativePath": "css/style.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
-      "Identity": "d:\\PROG\\Projects\\blog\\blog_main\\wwwroot\\images\\profile.jpg",
+      "Identity": "D:\\PROG\\Projects\\blog\\blog_main\\wwwroot\\images\\profile.jpg",
       "SourceId": "blog_main",
       "SourceType": "Discovered",
-      "ContentRoot": "d:\\PROG\\Projects\\blog\\blog_main\\wwwroot\\",
+      "ContentRoot": "D:\\PROG\\Projects\\blog\\blog_main\\wwwroot\\",
       "BasePath": "_content/blog_main",
       "RelativePath": "images/profile.jpg",
       "AssetKind": "All",
