@@ -6,7 +6,7 @@ namespace blog_main.Models
     {
         [Key]
         public int Post_Id { get; set;}
-        public string PostFileNameMinio { get;}
+        public string PostFileNameMinio { get; set;}
         public string PostName { get; set; }
         public string Author { get; set; }
         public string Description { get; set; }

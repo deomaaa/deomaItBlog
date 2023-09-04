@@ -1,16 +1,24 @@
 {
   "Files": [
     {
-      "Id": "d:\\Projects\\deomaItBlog\\blog_main\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\blog_main.bundle.scp.css",
+      "Id": "D:\\PROG\\Projects\\blog\\blog_main\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\blog_main.bundle.scp.css",
       "PackagePath": "staticwebassets\\blog_main.bundle.scp.css"
     },
     {
-      "Id": "d:\\Projects\\deomaItBlog\\blog_main\\wwwroot\\css\\style.css",
+      "Id": "D:\\PROG\\Projects\\blog\\blog_main\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
-      "Id": "d:\\Projects\\deomaItBlog\\blog_main\\wwwroot\\images\\profile.jpg",
+      "Id": "D:\\PROG\\Projects\\blog\\blog_main\\wwwroot\\fonts\\clacon2.ttf",
+      "PackagePath": "staticwebassets\\fonts\\clacon2.ttf"
+    },
+    {
+      "Id": "D:\\PROG\\Projects\\blog\\blog_main\\wwwroot\\images\\profile.jpg",
       "PackagePath": "staticwebassets\\images\\profile.jpg"
+    },
+    {
+      "Id": "D:\\PROG\\Projects\\blog\\blog_main\\wwwroot\\script\\script.js",
+      "PackagePath": "staticwebassets\\script\\script.js"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.blog_main.Microsoft.AspNetCore.StaticWebAssets.props",

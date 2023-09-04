@@ -10,8 +10,6 @@ namespace blog_main.Data
         public BlogDbContext(DbContextOptions<BlogDbContext> options) 
             : base(options)
         {
-            Database.EnsureDeleted();
-            Database.EnsureCreated();
         }
     }
 }

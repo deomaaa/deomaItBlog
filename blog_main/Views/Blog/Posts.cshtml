@@ -1,3 +1,62 @@
+@model List<Post>
+
 @{
     ViewData["Title"] = "Posts";
 }
+
+    @foreach(var post in Model)
+    {
+        <div class="blog__post">
+        <div class="container">
+            <div class="blog__post__inner__border">
+                <div class="blog__post__inner">
+
+                    <div class="blog__post__id">@post.Post_Id</div>
+                
+                    <div class="blog__post__header">       
+                        <div class="blog__post__name">
+                            Console
+                        </div>                  
+                    </div>
+
+                    <div class="blog__post__body">                  
+                        <div class="blog__post__body__name">
+                            This post will cover this topic:
+                            <span>@post.PostName</span>
+                        </div>
+                        <div class="blog__post__description">
+                            @post.Description
+                        </div> 
+                        <div class="blog__post__stat">
+                            &nbsp&nbsp&nbsp Information:
+                            <div class="blog__post__stat__items">
+                                <div class="blog__post__stat__item data">
+                                    Data - <span>@post.DateOfCreation</span>
+                                </div>
+                                <div class="blog__post__stat__item author">
+                                    Author - <span>@post.Author</span>
+                                </div>
+                                <div class="blog__post__stat__item views">
+                                    Views - <span>@post.ViewsCount</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog__post__input">
+                            <label for="YesNoInput">Do you want to watch the post in full? [Y/n]</label>
+                            <div class="blog__post__input__body">
+                                <div class="blog__post__input__text">
+                                    <input class="blog__post__input__area" name="YesNoInput" type="text">
+                                </div>
+                                <div class="blog__post__input__button">
+                                    <input type="button" name="YesNoIButton" value="Send">                                   
+                                </div>
+                            </div>                           
+                        </div>                              
+                    </div>
+                
+                </div>
+            </div>    
+        </div>
+    </div>
+    }
+

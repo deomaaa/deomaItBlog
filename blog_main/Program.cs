@@ -1,6 +1,8 @@
 using blog_main.Data;
 using blog_main.Profiles;
 using Microsoft.EntityFrameworkCore;
+using Minio;
+using Minio.AspNetCore;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,7 +12,14 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddAutoMapper(typeof(AppMappingProfile));
 
-var connectionString = builder.Configuration.GetConnectionString("WorkConnection");
+builder.Services.AddMinio(options =>
+{
+  options.Endpoint = "localhost:9000";
+  options.AccessKey = "deoma";
+  options.SecretKey = "fatfarm1";
+});
+
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<BlogDbContext>(options => options.UseNpgsql(connectionString));
 builder.Services.AddScoped<IPostRepo, PostRepo>();
 
@@ -33,6 +42,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Blog}/{action=Index}/{id?}");
+    pattern: "{controller=Blog}/{action=Index}");
 
 app.Run();
