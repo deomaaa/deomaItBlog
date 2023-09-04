@@ -20,6 +20,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[d:/PROG/Projects/blog/blog_main/Views/Blog/PostContent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xQb3N0Q29udGVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [d:/PROG/Projects/blog/blog_main/Views/Blog/Posts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xQb3N0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -30,6 +34,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [d:/PROG/Projects/blog/blog_main/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/PROG/Projects/blog/blog_main/wwwroot/post_files/1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = d3d3cm9vdFxwb3N0X2ZpbGVzXDEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [d:/PROG/Projects/blog/blog_main/Views/Shared/_Layout.cshtml]

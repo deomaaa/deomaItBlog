@@ -19,8 +19,13 @@ body{
     margin-top: 5em;
 }
 
+/* Post Id*/
+.blog__post__id {
+    display: none;
+}
+
 /* Blog Header */
-.blog__header__inner__menu li{
+.blog__header__inner__menu li {
     list-style-type: none;
     cursor: pointer;
     margin-right: 1em;

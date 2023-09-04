@@ -4,13 +4,14 @@
     ViewData["Title"] = "Posts";
 }
 
-<ul>
     @foreach(var post in Model)
     {
         <div class="blog__post">
         <div class="container">
             <div class="blog__post__inner__border">
                 <div class="blog__post__inner">
+
+                    <div class="blog__post__id">@post.Post_Id</div>
                 
                     <div class="blog__post__header">       
                         <div class="blog__post__name">
@@ -47,7 +48,7 @@
                                     <input class="blog__post__input__area" name="YesNoInput" type="text">
                                 </div>
                                 <div class="blog__post__input__button">
-                                    <input type="button" name="YesNoIButton" value="Send">
+                                    <input type="button" name="YesNoIButton" value="Send">                                   
                                 </div>
                             </div>                           
                         </div>                              
@@ -58,4 +59,4 @@
         </div>
     </div>
     }
-</ul>
+

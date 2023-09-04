@@ -5,6 +5,7 @@ namespace blog_main.Data
 {
     public interface IPostRepo
     {
-        Task<List<Post>> GetAllPosts();
+        Task<List<Post>?> GetAllPosts();
+        Task GetPostFileById(int post_id);
     }
 }

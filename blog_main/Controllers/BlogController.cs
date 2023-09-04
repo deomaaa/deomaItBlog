@@ -27,5 +27,13 @@ namespace blog_main.Controllers
 
             return View(posts);
         }  
+
+        [HttpGet("/{controller}/{action}/{post_id}")]
+        public async Task<IActionResult> PostContent(int post_id)
+        {
+            await _repository.GetPostFileById(post_id);
+
+            return View();
+        } 
     }
 }

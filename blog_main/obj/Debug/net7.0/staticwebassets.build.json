@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZsEt+lcCoxyE0/+x4+BRREUfAU/aXuFkEO0hbWoeyV0=",
+  "Hash": "u8EO+9ezIlODB7/negZsIGCz1FiTDmrbWMWTuIp1ZXw=",
   "Source": "blog_main",
   "BasePath": "_content/blog_main",
   "Mode": "Default",
@@ -100,6 +100,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\profile.jpg"
+    },
+    {
+      "Identity": "d:\\PROG\\Projects\\blog\\blog_main\\wwwroot\\post_files\\1.cshtml",
+      "SourceId": "blog_main",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\PROG\\Projects\\blog\\blog_main\\wwwroot\\",
+      "BasePath": "_content/blog_main",
+      "RelativePath": "post_files/1.cshtml",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "wwwroot\\post_files\\1.cshtml"
+    },
+    {
+      "Identity": "d:\\PROG\\Projects\\blog\\blog_main\\wwwroot\\script\\script.js",
+      "SourceId": "blog_main",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\PROG\\Projects\\blog\\blog_main\\wwwroot\\",
+      "BasePath": "_content/blog_main",
+      "RelativePath": "script/script.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\script\\script.js"
     }
   ]
 }
