@@ -184,33 +184,33 @@ curl -X POST http://localhost:5080/api/posts \
 
 ## Deployment
 
-The production instance runs on a single Linux VPS: Kestrel bound to `127.0.0.1`, nginx in
-front for TLS, systemd for the process lifecycle. Everything needed is in [`deploy/`](deploy).
+The production instance runs on a single Linux VPS: the application runs as a **Docker
+container** (Compose) listening on `127.0.0.1:5080`, with nginx in front for TLS and static
+caching. Everything needed is in [`deploy/`](deploy) and [`docker-compose.yml`](docker-compose.yml).
 
 ```
-internet ──▶ nginx :443 (TLS, gzip, static caching) ──▶ Kestrel 127.0.0.1:5080 ──▶ SQLite
+internet ──▶ nginx :443 (TLS, gzip, static caching) ──▶ container 127.0.0.1:5080 ──▶ SQLite volume
                                                               ▲
-                                              systemd (Restart=always, hardened unit)
+                                          docker compose (restart: unless-stopped, healthcheck)
 ```
 
 ```bash
-# 1. publish and restart (the script waits for /health)
-sudo bash deploy/deploy.sh
+# the live setup: build the image and start the container
+printf 'ADMIN_API_KEY=%s\n' "$(openssl rand -hex 32)" > .env   # compose reads it, .env is gitignored
+docker compose up -d --build
+docker compose ps && curl -sS http://127.0.0.1:5080/health
 
-# 2. first-time setup
-sudo install -d -o www-data -g www-data /var/www/deomablog
-sudo install -d -o www-data -g www-data -m 750 /var/lib/deomablog
-sudo install -d -o root -g www-data -m 750 /etc/deomablog
-sudo install -o root -g www-data -m 640 deploy/deomablog.env.example /etc/deomablog/deomablog.env
-sudo install -m 644 deploy/deomablog.service /etc/systemd/system/deomablog.service
+# reverse proxy + certificate (once)
 sudo cp deploy/deomablog.nginx.conf /etc/nginx/sites-available/deomablog
 sudo ln -s /etc/nginx/sites-available/deomablog /etc/nginx/sites-enabled/
-sudo systemctl daemon-reload && sudo systemctl enable --now deomablog
+sudo nginx -t && sudo systemctl reload nginx
 sudo certbot --nginx -d <your-domain> --redirect
 ```
 
-Containers are supported too (`Dockerfile`, `docker-compose.yml`) — same app, same
-configuration keys, for platforms where systemd is not the answer.
+A **systemd unit** is included as the no-Docker path (`deploy/deomablog.service` +
+`deploy/deploy.sh`): publish to `/var/www/deomablog`, secrets in `/etc/deomablog/deomablog.env`,
+database in `/var/lib/deomablog`. Both paths serve exactly the same binary and configuration
+keys — switching is a deploy decision, not a code change.
 
 ## How the quality is kept
 

@@ -102,11 +102,20 @@ dotnet test                                # юнит- и интеграцион
 
 ## Деплой
 
-Продакшен — один VPS: Kestrel на `127.0.0.1`, nginx впереди для TLS, systemd для процесса.
-Всё необходимое — в каталоге [`deploy/`](deploy), включая скрипт `deploy.sh`, который после
-публикации дожидается успешного `/health`.
+Продакшен — один VPS: приложение работает **в Docker-контейнере** (Compose) на
+`127.0.0.1:5080`, впереди nginx для TLS и кэширования статики. Всё, что нужно, лежит в
+[`deploy/`](deploy) и [`docker-compose.yml`](docker-compose.yml).
 
-Есть и контейнерный вариант: `Dockerfile` и `docker-compose.yml`.
+```bash
+printf 'ADMIN_API_KEY=%s\n' "$(openssl rand -hex 32)" > .env   # compose читает его, .env в .gitignore
+docker compose up -d --build
+docker compose ps && curl -sS http://127.0.0.1:5080/health
+```
+
+Юнит systemd (`deploy/deomablog.service` и `deploy/deploy.sh`) в репозитории оставлен как
+путь без Docker: публикация в `/var/www/deomablog`, секреты в
+`/etc/deomablog/deomablog.env`, база в `/var/lib/deomablog`. Оба варианта запускают один и
+тот же бинарник с одними и теми же ключами конфигурации.
 
 ## Качество
 
