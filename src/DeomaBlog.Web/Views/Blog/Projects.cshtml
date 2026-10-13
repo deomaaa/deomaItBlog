@@ -1,0 +1,30 @@
+@model IReadOnlyList<ProjectCardViewModel>
+
+<section class="panel">
+    <h2 class="panel__title">Projects <span class="prompt">&gt;</span></h2>
+
+    <p class="lead">
+        Everything below is open source and lives on GitHub. Each repository has a README with the
+        problem it solves, the decisions behind it and how to run it locally.
+    </p>
+
+    <div class="projects">
+        @foreach (var project in Model)
+        {
+            <article class="project">
+                <h3 class="project__name">
+                    <a href="@project.RepoUrl">@project.Name</a>
+                </h3>
+                <p class="project__description">@project.Description</p>
+                <p class="project__stack">@project.Stack</p>
+                <p class="project__links">
+                    <a href="@project.RepoUrl">code →</a>
+                    @if (!string.IsNullOrWhiteSpace(project.LiveUrl))
+                    {
+                        <a href="@project.LiveUrl">live →</a>
+                    }
+                </p>
+            </article>
+        }
+    </div>
+</section>

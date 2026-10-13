@@ -1,0 +1,70 @@
+@model PostListViewModel
+
+<section class="panel">
+    <h2 class="panel__title">Posts <span class="prompt">&gt;</span></h2>
+
+    <form class="search" method="get" action="/posts" role="search">
+        <input class="search__input"
+               type="search"
+               name="q"
+               value="@Model.Search"
+               placeholder="search titles, summaries, code…"
+               aria-label="Search posts" />
+        @if (!string.IsNullOrWhiteSpace(Model.ActiveTag))
+        {
+            <input type="hidden" name="tag" value="@Model.ActiveTag" />
+        }
+        <input type="hidden" name="sort" value="@Model.SortToken" />
+        <button class="search__button" type="submit">search</button>
+    </form>
+
+    @if (Model.Tags.Count > 0)
+    {
+        <ul class="tags tags--cloud">
+            <li>
+                <a class="tag @(Model.ActiveTag is null ? "tag--active" : null)" href="/posts">all</a>
+            </li>
+            @foreach (var tag in Model.Tags)
+            {
+                <li>
+                    <a class="tag @(Model.ActiveTag == tag.Slug ? "tag--active" : null)"
+                       href="/posts?tag=@tag.Slug">#@tag.Name <span class="tag__count">@tag.PostCount</span></a>
+                </li>
+            }
+        </ul>
+    }
+
+    <p class="meta meta--row">
+        <span>@Model.Posts.TotalCount posts</span>
+        <span class="dot">·</span>
+        <span>sorted by @Model.SortLabel</span>
+        <span class="dot">·</span>
+        <span>
+            <a href="/posts?sort=popular@(Model.ActiveTag is null ? "" : $"&tag={Model.ActiveTag}")">most read</a>
+            ·
+            <a href="/posts?sort=oldest@(Model.ActiveTag is null ? "" : $"&tag={Model.ActiveTag}")">oldest</a>
+        </span>
+        @if (Model.HasFilters)
+        {
+            <span class="dot">·</span>
+            <span><a href="/posts">clear filters</a></span>
+        }
+    </p>
+
+    @if (Model.Posts.Items.Count == 0)
+    {
+        <p class="empty">
+            Nothing found@(Model.HasFilters ? " for this filter" : string.Empty). Try another word or
+            <a href="/posts">browse everything</a>.
+        </p>
+    }
+    else
+    {
+        @foreach (var post in Model.Posts.Items)
+        {
+            <partial name="_PostCard" model="post" />
+        }
+
+        <partial name="_Pager" model="new PagerViewModel(Model.Posts.Page, Model.Posts.TotalPages, Model.ActiveTag, Model.Search, Model.SortToken)" />
+    }
+</section>

@@ -1,0 +1,43 @@
+@model IReadOnlyList<TimelineEntryViewModel>
+
+<section class="panel">
+    <h2 class="panel__title">Work_Experience <span class="prompt">&gt;</span></h2>
+
+    <ol class="timeline">
+        @foreach (var entry in Model)
+        {
+            <li class="timeline__item">
+                <span class="timeline__period">@entry.Period</span>
+                <div class="timeline__body">
+                    <h3 class="timeline__title">@entry.Title</h3>
+                    <p class="timeline__place">@entry.Place</p>
+                    <ul class="timeline__highlights">
+                        @foreach (var highlight in entry.Highlights)
+                        {
+                            <li>@highlight</li>
+                        }
+                    </ul>
+                </div>
+            </li>
+        }
+    </ol>
+</section>
+
+<section class="panel">
+    <h2 class="panel__title">Toolbox <span class="prompt">&gt;</span></h2>
+    <ul class="stack">
+        @foreach (var item in SiteContent.Stack)
+        {
+            <li>@item</li>
+        }
+    </ul>
+</section>
+
+<section class="panel">
+    <h2 class="panel__title">Reading the code <span class="prompt">&gt;</span></h2>
+    <p>
+        This blog is the résumé: the <a href="@SiteContent.Repository">repository</a> keeps the
+        domain model, use cases, persistence, REST API and tests in separate projects, and the
+        README explains why each boundary exists.
+    </p>
+</section>

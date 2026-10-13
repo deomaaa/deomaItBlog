@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/DeomaBlog.Application/DeomaBlog.Application.csproj" />
+    <Project Path="src/DeomaBlog.Domain/DeomaBlog.Domain.csproj" />
+    <Project Path="src/DeomaBlog.Infrastructure/DeomaBlog.Infrastructure.csproj" />
+    <Project Path="src/DeomaBlog.Web/DeomaBlog.Web.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/DeomaBlog.IntegrationTests/DeomaBlog.IntegrationTests.csproj" />
+    <Project Path="tests/DeomaBlog.UnitTests/DeomaBlog.UnitTests.csproj" />
+  </Folder>
+</Solution>

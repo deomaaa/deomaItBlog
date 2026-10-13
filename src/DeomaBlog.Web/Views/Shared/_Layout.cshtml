@@ -1,0 +1,84 @@
+@{
+    var title = ViewData["Title"] as string ?? "Home";
+    var description = ViewData["Description"] as string ?? "Notes of a .NET developer.";
+    var year = DateTime.UtcNow.Year;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@title · deomaBlog</title>
+    <meta name="description" content="@description" />
+    <meta name="author" content="@SiteContent.AuthorName" />
+    <meta name="theme-color" content="#222222" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="@title · deomaBlog" />
+    <meta property="og:description" content="@description" />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="icon" href="~/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" />
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="site__header">
+        <div class="container">
+            <nav class="nav">
+                <a class="nav__brand" href="/">deoma<span>blog</span></a>
+                <ul class="nav__menu">
+                    <li><a asp-controller="Blog" asp-action="Index">/About/</a></li>
+                    <li><a asp-controller="Blog" asp-action="Posts">/Posts/</a></li>
+                    <li><a asp-controller="Blog" asp-action="Projects">/Projects/</a></li>
+                    <li><a asp-controller="Blog" asp-action="Experience">/Work_Experience/</a></li>
+                    <li><a href="/api/docs">/API/</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="profile">
+        <div class="container">
+            <div class="profile__inner">
+                <div class="profile__photo">
+                    <img src="~/images/profile.jpg" alt="@SiteContent.AuthorName" width="200" height="200" />
+                </div>
+                <div class="profile__data">
+                    <h1 class="profile__name">@SiteContent.AuthorName</h1>
+                    <h2 class="profile__role">@SiteContent.AuthorRole</h2>
+                    <ul class="profile__links">
+                        <li><a href="@SiteContent.GitHub">GitHub</a></li>
+                        <li><a href="@SiteContent.Telegram">Telegram</a></li>
+                        <li><a href="mailto:@SiteContent.Email">E-mail</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="container site__content">
+        @RenderBody()
+    </main>
+
+    <footer class="site__footer">
+        <div class="container">
+            <div class="site__footer__inner">
+                <p>deomaBlog, @year — ASP.NET Core, EF Core, nginx.</p>
+                <p>
+                    <a href="@SiteContent.Repository">source code</a>
+                    <span class="dot">·</span>
+                    <a href="/health">status</a>
+                    <span class="dot">·</span>
+                    <a href="/api/docs">API</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/js/site.js" asp-append-version="true" defer></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+@model HomeViewModel
+@{
+    var tags = Model.Tags.Take(12).ToList();
+}
+
+<section class="panel">
+    <h2 class="panel__title">About this blog <span class="prompt">&gt;</span></h2>
+
+    <div class="panel__section">
+        <h3>Who am I?</h3>
+        <p>
+            Hi! I am a student of the <a href="@SiteContent.University">LETI University</a> Department of
+            Electrical Engineering and Automation. I read a lot — detective stories, Lovecraft,
+            King, anything with a mood 📗. I like the futuristic vibe of the 2000s 💿, I play the
+            guitar and sing for the soul 🎸. But the biggest slice of the pie is programming 💻.
+        </p>
+    </div>
+
+    <div class="panel__section">
+        <h3>What is this blog about?</h3>
+        <p>
+            Posts useful to .NET and C# developers: language features, the theory underneath them,
+            architecture decisions and the mistakes I made on the way — each one backed by an
+            example from code I actually shipped.
+        </p>
+        <p>
+            The blog you are reading is itself the biggest example: an ASP.NET Core application
+            (<a href="@SiteContent.Repository">source on GitHub</a>) built with clean
+            architecture, EF Core, a read/write REST API and tests.
+        </p>
+    </div>
+
+    <div class="panel__section">
+        <h3>How to reach me?</h3>
+        <p>Write to me by e-mail or Telegram if you have questions or suggestions.</p>
+        <ul class="contact-list">
+            <li>Email — <a href="mailto:@SiteContent.Email">@SiteContent.Email</a></li>
+            <li>Telegram — <a href="@SiteContent.Telegram">@@deoooma</a></li>
+            <li>GitHub — <a href="@SiteContent.GitHub">github.com/deomaaa</a></li>
+        </ul>
+    </div>
+</section>
+
+<section class="stats">
+    <div class="stats__item">
+        <span class="stats__value">@Model.PostCount</span>
+        <span class="stats__label">posts</span>
+    </div>
+    <div class="stats__item">
+        <span class="stats__value">@Model.Tags.Count</span>
+        <span class="stats__label">topics</span>
+    </div>
+    <div class="stats__item">
+        <span class="stats__value">@Model.TotalReadingMinutes</span>
+        <span class="stats__label">minutes of reading</span>
+    </div>
+    <div class="stats__item">
+        <span class="stats__value">&lt;/&gt;</span>
+        <span class="stats__label">.NET 10 · EF Core</span>
+    </div>
+</section>
+
+<section class="panel">
+    <h2 class="panel__title">Latest posts <span class="prompt">&gt;</span></h2>
+
+    @foreach (var post in Model.LatestPosts)
+    {
+        <partial name="_PostCard" model="post" />
+    }
+
+    <p class="more">
+        <a href="/posts">all posts →</a>
+    </p>
+</section>
+
+@if (tags.Count > 0)
+{
+    <section class="panel">
+        <h2 class="panel__title">Topics <span class="prompt">&gt;</span></h2>
+        <ul class="tags tags--cloud">
+            @foreach (var tag in tags)
+            {
+                <li>
+                    <a class="tag" href="/posts?tag=@tag.Slug">#@tag.Name <span class="tag__count">@tag.PostCount</span></a>
+                </li>
+            }
+        </ul>
+    </section>
+}
+
+<section class="panel">
+    <h2 class="panel__title">Toolbox <span class="prompt">&gt;</span></h2>
+    <ul class="stack">
+        @foreach (var item in SiteContent.Stack)
+        {
+            <li>@item</li>
+        }
+    </ul>
+</section>

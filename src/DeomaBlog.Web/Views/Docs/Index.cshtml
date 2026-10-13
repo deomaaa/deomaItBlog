@@ -1,0 +1,44 @@
+@{
+    Layout = "_Layout";
+}
+
+<section class="panel">
+    <h2 class="panel__title">API <span class="prompt">&gt;</span></h2>
+
+    <p class="lead">
+        The same use cases the pages use, exposed as JSON. Read endpoints are open, write endpoints
+        require an <code>X-Api-Key</code> header.
+    </p>
+
+    <ul class="stack stack--wide">
+        <li><code>GET /api/posts?page=1&amp;pageSize=6&amp;tag=csharp&amp;q=async&amp;sort=popular</code></li>
+        <li><code>GET /api/posts/{slug}</code></li>
+        <li><code>GET /api/posts/{slug}/related</code></li>
+        <li><code>GET /api/tags</code></li>
+        <li><code>POST /api/posts</code>, <code>PUT /api/posts/{slug}</code>, <code>DELETE /api/posts/{slug}</code></li>
+        <li><code>GET /health</code> — liveness probe used by the VPS</li>
+        <li><code>GET /openapi/v1.json</code> — machine readable contract</li>
+    </ul>
+
+    <div id="swagger-ui" class="swagger"></div>
+</section>
+
+<link rel="stylesheet" href="https://unpkg.com/swagger-ui-dist@5/swagger-ui.css" />
+<script src="https://unpkg.com/swagger-ui-dist@5/swagger-ui-bundle.js" crossorigin></script>
+<script>
+    window.addEventListener('DOMContentLoaded', function () {
+        if (window.SwaggerUIBundle) {
+            window.SwaggerUIBundle({
+                url: '/openapi/v1.json',
+                dom_id: '#swagger-ui',
+                docExpansion: 'list',
+                defaultModelsExpandDepth: -1,
+                tryItOutEnabled: false
+            });
+        } else {
+            document.getElementById('swagger-ui').innerHTML =
+                '<p class="lead">Swagger UI could not be loaded from the CDN. The raw contract is at ' +
+                '<a href="/openapi/v1.json">/openapi/v1.json</a>.</p>';
+        }
+    });
+</script>

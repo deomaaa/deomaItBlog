@@ -1,0 +1,26 @@
+@model PagerViewModel
+
+@if (Model.TotalPages > 1)
+{
+    <nav class="pager" aria-label="Pagination">
+        @if (Model.HasPrevious)
+        {
+            <a class="pager__link" href="@Model.LinkTo(Model.Page - 1)">← newer</a>
+        }
+        else
+        {
+            <span class="pager__link pager__link--disabled">← newer</span>
+        }
+
+        <span class="pager__state">page @Model.Page of @Model.TotalPages</span>
+
+        @if (Model.HasNext)
+        {
+            <a class="pager__link" href="@Model.LinkTo(Model.Page + 1)">older →</a>
+        }
+        else
+        {
+            <span class="pager__link pager__link--disabled">older →</span>
+        }
+    </nav>
+}

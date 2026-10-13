@@ -1,0 +1,47 @@
+@model PostPageViewModel
+
+<article class="post">
+    <header class="post__header">
+        <h1 class="post__title">@Model.Post.Title</h1>
+        <p class="meta meta--row">
+            <span>@Model.Post.PublishedDisplay</span>
+            <span class="dot">·</span>
+            <span>⏱ @Model.Post.ReadingTimeMinutes min read</span>
+            <span class="dot">·</span>
+            <span>@Model.Post.ViewCount views</span>
+        </p>
+        @if (Model.Post.Tags.Count > 0)
+        {
+            <ul class="tags">
+                @foreach (var tag in Model.Post.Tags)
+                {
+                    <li><a class="tag" href="/posts?tag=@tag.Slug">#@tag.Name</a></li>
+                }
+            </ul>
+        }
+    </header>
+
+    <div class="post__body">
+        @Html.Raw(Model.Post.ContentHtml)
+    </div>
+
+    <footer class="post__footer">
+        <p class="meta">
+            Written by <a href="@SiteContent.GitHub">@SiteContent.AuthorName</a>.
+            Something wrong or unclear? <a href="mailto:@SiteContent.Email">Tell me</a> — I fix posts.
+        </p>
+    </footer>
+</article>
+
+@if (Model.Related.Count > 0)
+{
+    <section class="panel">
+        <h2 class="panel__title">Read next <span class="prompt">&gt;</span></h2>
+        @foreach (var post in Model.Related)
+        {
+            <partial name="_PostCard" model="post" />
+        }
+    </section>
+}
+
+<p class="more"><a href="/posts">← all posts</a></p>

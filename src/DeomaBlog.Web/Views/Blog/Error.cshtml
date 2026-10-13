@@ -1,0 +1,17 @@
+@model ErrorViewModel
+
+<section class="panel panel--error">
+    <h2 class="panel__title">@Model.Title <span class="prompt">&gt;</span></h2>
+    <p class="lead">@Model.Message</p>
+
+    <p class="more">
+        @if (Model.IsNotFound)
+        {
+            <a href="/posts">posts →</a>
+        }
+        else
+        {
+            <a href="/">home →</a>
+        }
+    </p>
+</section>

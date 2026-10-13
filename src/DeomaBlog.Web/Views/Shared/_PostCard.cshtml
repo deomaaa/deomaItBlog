@@ -1,0 +1,28 @@
+@model PostSummaryDto
+
+<article class="card">
+    <header class="card__header">
+        <h3 class="card__title">
+            <a asp-controller="Blog" asp-action="Post" asp-route-slug="@Model.Slug">@Model.Title</a>
+        </h3>
+        <p class="meta">
+            <span>@Model.PublishedDisplay</span>
+            <span class="dot">·</span>
+            <span>@Model.ReadingTimeDisplay</span>
+            <span class="dot">·</span>
+            <span>@Model.ViewCount views</span>
+        </p>
+    </header>
+
+    <p class="card__summary">@Model.Summary</p>
+
+    @if (Model.Tags.Count > 0)
+    {
+        <ul class="tags">
+            @foreach (var tag in Model.Tags)
+            {
+                <li><a class="tag" href="/posts?tag=@tag.Slug">#@tag.Name</a></li>
+            }
+        </ul>
+    }
+</article>
